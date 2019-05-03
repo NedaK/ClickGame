@@ -20,9 +20,12 @@ class App extends React.Component{
     this.setState({ score: this.state.score + 1 });
   };
 
-  showTopScore = () =>{
-    this.setState({top_score: this.state.score})
+  setTopScore = () =>{
+    if(this.state.top_score < this.state.score){
+      this.setState({top_score: this.state.score})
+    }
   };
+
 //show if guess is correct or incorrect to user
   showGuess = () =>{
     let guess = "Correct!"
@@ -36,10 +39,10 @@ class App extends React.Component{
 
   
   gameEnd = () =>{
-    if(this.state.top_score < this.state.score){
-      this.setState({top_score: this.state.score})
-    }
     console.log("game over");
+    
+    this.setTopScore();
+
     this.setState({score: 0});
     this.setState({selected: []});
     this.setState({gameStarted:false});
@@ -49,28 +52,25 @@ class App extends React.Component{
 
   handleSelected = (id) =>{
     console.log(id);
-    //console.log(typeof id);
-    //console.log(typeof this.state.selected);
-    //console.log(this.isempty());
+    
     this.setState({gameStarted: true});
 
     if (this.state.selected.indexOf(id)!== -1){
+      //set state and then do all other stuff
       this.setState({correct: false}, ()=>{
-        this.showTopScore();
         this.showGuess();
         setTimeout(this.gameEnd, 3000)
-       // this.gameEnd();
+       
       });
       
     }
    else{
-
       //let joinedArray = this.state.selected.concat(id);
       this.setState({selected: this.state.selected.concat(id)}, ()=>{
         console.log("selected: "+ this.state.selected)
         this.addScore();
-      this.showGuess();
-      this.setState({animals: this.shuffle(this.state.animals)})
+        this.showGuess();
+        this.setState({animals: this.shuffle(this.state.animals)})
       });
        
     }
@@ -88,11 +88,6 @@ class App extends React.Component{
   };
 
 
-  // handleRemove = id =>{
-  //   const filteredFriends = this.state.friends.filter(f => f.id !== id);
-  //   this.setState({friends: filteredFriends});
-  // };
-
   render(){
     return (
       <div>
@@ -100,9 +95,6 @@ class App extends React.Component{
     <Wrapper>
     <AnimalCard animals = {this.state.animals} handleSelected = {this.handleSelected}/>
      
-    {/* {this.state.animals.map(object=>{
-      return <AnimalCard name={object.name}  image={object.image}  remove={() => this.handleRemove(object.id)} />
-    })}  */}
     </Wrapper>
     </div>
     )

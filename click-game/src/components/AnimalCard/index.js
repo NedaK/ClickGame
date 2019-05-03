@@ -5,7 +5,7 @@ function AnimalCard(props) {
   return (
      <div className = "container">
       {props.animals.map(object=> (
-       <div className="card" >
+       <div className="card" key ={object.id}>
         <div className="img-container" id={object.id}
             onClick={() => props.handleSelected(object.id)}>
           <img alt={object.name} src={object.image} />
