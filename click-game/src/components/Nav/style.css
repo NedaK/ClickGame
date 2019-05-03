@@ -1,0 +1,10 @@
+.navbar-nav{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+li.nav-item{
+    font-size: 26px;
+    color: #F0FFFF;
+    font-family: "Lucida Console", Monaco, monospace;
+    /* font-family: Impact, Charcoal, sans-serif; */
+}
