@@ -2,7 +2,7 @@
   "name": "click-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NedaK.github.io/ClickGame/",
+  "homepage": "https://NedaK.github.io/ClickGame",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
