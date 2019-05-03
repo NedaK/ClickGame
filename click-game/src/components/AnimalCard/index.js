@@ -8,7 +8,7 @@ function AnimalCard(props) {
        <div className="card" key ={object.id}>
         <div className="img-container" id={object.id}
             onClick={() => props.handleSelected(object.id)}>
-          <img alt={object.name} src={object.image} />
+          <img alt={object.name} src={process.env.PUBLIC_URL + object.image} />
         </div>
         </div>
         ))}
