@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ClickGame/static/css/main.6f825c69.chunk.css",
-    "main.js": "/ClickGame/static/js/main.a0aa9be8.chunk.js",
-    "main.js.map": "/ClickGame/static/js/main.a0aa9be8.chunk.js.map",
-    "runtime~main.js": "/ClickGame/static/js/runtime~main.979c4616.js",
-    "runtime~main.js.map": "/ClickGame/static/js/runtime~main.979c4616.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "/ClickGame/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.b2466727.chunk.js": "/ClickGame/static/js/2.b2466727.chunk.js",
-    "static/js/2.b2466727.chunk.js.map": "/ClickGame/static/js/2.b2466727.chunk.js.map",
-    "index.html": "/ClickGame/index.html",
-    "precache-manifest.3d3d1ee509f41761c5b0e450cc19673f.js": "/ClickGame/precache-manifest.3d3d1ee509f41761c5b0e450cc19673f.js",
-    "service-worker.js": "/ClickGame/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "/ClickGame/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.6f825c69.chunk.css.map": "/ClickGame/static/css/main.6f825c69.chunk.css.map"
+    "main.css": "/ClickGame/click-game/static/css/main.6f825c69.chunk.css",
+    "main.js": "/ClickGame/click-game/static/js/main.e60eba15.chunk.js",
+    "main.js.map": "/ClickGame/click-game/static/js/main.e60eba15.chunk.js.map",
+    "runtime~main.js": "/ClickGame/click-game/static/js/runtime~main.b582055e.js",
+    "runtime~main.js.map": "/ClickGame/click-game/static/js/runtime~main.b582055e.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/ClickGame/click-game/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.b2466727.chunk.js": "/ClickGame/click-game/static/js/2.b2466727.chunk.js",
+    "static/js/2.b2466727.chunk.js.map": "/ClickGame/click-game/static/js/2.b2466727.chunk.js.map",
+    "index.html": "/ClickGame/click-game/index.html",
+    "precache-manifest.7ac326913afd09af144a6f3dbce53fb0.js": "/ClickGame/click-game/precache-manifest.7ac326913afd09af144a6f3dbce53fb0.js",
+    "service-worker.js": "/ClickGame/click-game/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/ClickGame/click-game/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.6f825c69.chunk.css.map": "/ClickGame/click-game/static/css/main.6f825c69.chunk.css.map"
   }
 }
